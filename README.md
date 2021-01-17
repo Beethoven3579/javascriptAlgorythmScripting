@@ -1,2 +1,2 @@
-# javascriptAlgorythmScripting
+# javascriptAlgorithmScripting
 some intermediate scripting 
