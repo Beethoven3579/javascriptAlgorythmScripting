@@ -41,3 +41,16 @@ function diffArray(arr1, arr2) {
   }
   
   console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+// New solution using ES7 musch more concise!
+
+function diffArray(arr1, arr2) {
+
+let difference = arr1
+                 .filter(x => !arr2.includes(x))
+                 .concat(arr2.filter(x => !arr1.includes(x)));
+
+  return difference;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
